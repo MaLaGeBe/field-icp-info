@@ -33,7 +33,7 @@ basekit.addField({
 			component: FieldComponent.FieldSelect,
 			props: {
 				supportType: [FieldType.Text],
-				// 将dependID移动到props中
+				placeholder: '目标字段文本只能是顶级域名，如baidu.com',
 				dependID: (params) => params.dependID || 'defaultDependID'
 			},
 			validator: {
